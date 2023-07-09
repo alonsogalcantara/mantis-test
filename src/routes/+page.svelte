@@ -7,6 +7,8 @@
 
 <h1 class="text-3xl font-bold underline">Mail tracker</h1>
 
+<a href="mantis-tracker">Mantis</a>
+
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.gray.100);

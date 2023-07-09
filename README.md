@@ -1,38 +1,10 @@
-# create-svelte
+# Sveltekit y Mantis bug tracker
+Asi es, acabas de leer bien, como sera posible que conviva Sveltekit y MBT (Mantis Bug TRacker) al mismo tiempo, pues yo tampoco lo creia posible pero gracias a la documentacion que tiene Sveltekit se puede lograr siguiendo los pasos de la configaracion de SPA (Single-page apps).
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Como lo hice
+Pues "sencillo", no es mas que seguir las instrcucciones que te da la pagina de [Mantis](https://www.mantisbt.org/index.php), entonces con la documentacion de [sveltekit](https://kit.svelte.dev/docs/single-page-apps) podemos hacer que estos dos vivan en el mismo lugar.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Pasos a seguir
+1. Ejecutar el comando que nos crea la _build_
+2. En un servidor APACHE (ya sea en WAMP server, XAMP server o MAMP server) dentro de la carpeta _www_ podemos pegar dicha _build_
+3. Fin :\)
