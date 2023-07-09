@@ -1,4 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/kit/vite';
+
 
 export default {
     kit: {
@@ -11,5 +13,6 @@ export default {
             precompress: false,
             strict: true
         })
-    }
+    },
+    preprocess: vitePreprocess()
 };

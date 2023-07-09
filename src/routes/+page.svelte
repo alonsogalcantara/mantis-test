@@ -1,5 +1,15 @@
 <script>
-    export const prerender = true;
+	import Navbar from './components/navbar.svelte';
 </script>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<Navbar />
+<div class="container">
+
+<h1 class="text-3xl font-bold underline">Mail tracker</h1>
+
+<style lang="postcss">
+	:global(html) {
+		background-color: theme(colors.gray.100);
+	}
+</style>
+</div>
